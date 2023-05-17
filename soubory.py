@@ -25,7 +25,7 @@ def read_and_write_passwd():
         passwd.write(f"Username: {lines[0]} and bash: {lines[-1]}")
 
 #4
-check_directory():
+def check_directory():
     dir = input("Full path of the directory to show: ")
     directory = Path(dir)
     for file in directory.iterdir():
@@ -35,3 +35,6 @@ check_directory():
             print(f"{file} is a directory")
         else:
             print("I don't know what that is")
+
+read_and_write_passwd()
+check_directory()
