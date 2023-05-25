@@ -24,6 +24,7 @@ class Soubory:
             lines = line.split(":")
             #3
             passwd.write(f"Username: {lines[0]} and bash: {lines[-1]}")
+        passwd.close()
 
     #4
     def check_directory(dir):
