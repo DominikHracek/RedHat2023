@@ -2,7 +2,7 @@ from pathlib import Path
 
 class Soubory:
     #1
-    def open_file(file_path):
+    """def open_file(file_path):
         path_to_file = Path.open(file_path)
         file_content = path_to_file.read()
         return file_content
@@ -10,7 +10,7 @@ class Soubory:
     file_path = input("Full path of the file: ")
     file_content_path = input("Full path of the content of the file: ")
     file_content = Path(file_content_path).open("w")
-    file_content.write(open_file(file_path))
+    file_content.write(open_file(file_path))"""
 
     #2
     lines = []
