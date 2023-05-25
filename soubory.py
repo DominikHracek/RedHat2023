@@ -42,4 +42,4 @@ class Soubory:
             return False
 
 #Soubory.check_directory("/home/dominik/Downloads")
-Soubory.read_and_write_passwd("/home/dominik/Documents/passwd.txt")
+Soubory.read_and_write_passwd("/tmp/passwd.txt")

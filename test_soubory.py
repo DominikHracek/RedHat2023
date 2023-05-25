@@ -5,7 +5,7 @@ from pathlib import Path
 @pytest.mark.parametrize(
         "command,expected",
         [
-            ("/home/dominik/Documents/passwd.txt", "Username")
+            ("/tmp/passwd.txt", "Username")
         ]
     )
 
@@ -21,9 +21,9 @@ def test_red_and_write_passwd(command, expected):
 @pytest.mark.parametrize(
         "command,expected",
         [
-            ("/home/dominik/Downloads", True),
-            ("/home/dominik/RedHat2023", True),
-            ("/home/dominik/Random", False)
+            ("/tmp/", True),
+            ("/usr/bin/", True),
+            ("/RandomDir", False)
         ]
     )
 
