@@ -19,7 +19,7 @@ class Soubory:
         passwd = Path(passwd_path).open("w")
         passwd.write("")
         passwd = Path(passwd_path).open("a")
-        file_path = Path.open("/etc/passwd")
+        file_path = Path("/etc/passwd").open("r")
         for line in file_path.readlines():
             lines = line.split(":")
             #3
